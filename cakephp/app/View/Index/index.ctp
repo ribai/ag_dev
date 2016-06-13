@@ -1,1 +1,30 @@
-[INDEX CONTENT]
+<div class="lectures">
+	<h2>現在開講中の講義</h2>
+	<table>
+		<tr><th>A棟</th><th>B棟</th><th>C棟</th><th>D棟</th></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+	</table>
+</div>
+<div class="active-list">
+	<h2>最新の実況</h2>
+	<table>
+		<tr><th>講義名</th><th>教室</th><th>時限</th><th>講師</th></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+		<tr><td>コンピュータ</td><td>A101</td><td>1</td><td>青山教授</td></tr>
+	</table>
+</div>

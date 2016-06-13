@@ -9,7 +9,7 @@ section, hgroup, nav, article, aside, header, footer {
 	margin						: 0;
 	padding						: 0;
 	font-size					: 100%;
-	background-color: blue;
+	background-color:#FFF;
 }
 section, hgroup, nav, article, aside, figure, header, footer {
 	display						: block;
@@ -25,23 +25,46 @@ ul li, ol li {
 /*container*/
 #container{
 	width:100%;
-	height:1500px;
+	height:auto;
 	margin:0px auto;
 	border:solid 1px #000;
-	background-color:black;
+	background-color:#FFF;
 }
 
 /*header*/
 #header{
-	border:solid 1px #000;
 	background-color:white;
 	width: 100%;
-	height:95px;
+	height:100px;
+}
+
+.user-name{
+	float:right;
+}
+
+.border-header{
+	font-size: 15px;
+	color: white;
+	background-color: #3365a2;
+	width:100%;
+	height:23px;
+	padding:0px 20px;
+}
+.border-header-sub{
+	font-size: 15px;
+	background-color: #e1ffff;
+	width:100%;
+	height: 25px;
+	padding: 2px 20px;
+}
+.border-header-img{
+	margin:5px 20px;
+	background-color: white;
+	height: 45px;
 }
 
 /*wrapper*/
 #wrapper{
-	border:solid 1px #000;
 	background-color: pink;
 	width: 100%;
 	height:100%;
@@ -49,50 +72,76 @@ ul li, ol li {
 
 /*sidebar*/
 #sidebar{
-	border:solid 1px #000;
-	background-color: red;
 	float:left;
 	width:15%;
 	height:100%;
 }
 
+.side_menu{
+	width:90%;
+	margin:5px auto;
+}
+
+.side_menu ul{
+	border:solid 1px #000;
+}
+.side_menu li{
+	border-bottom:solid 1px #000;
+	text-align: center;
+	color:#00f;
+}
+
 /*content*/
 #content{
-	border:solid 1px #000;
-	background-color: blue;
+	background-color: white;
 	width: auto;
 	height:100%;
 	width:84%;
 	float:left;
 }
 
+#content h2{
+	width:100%;
+	background-color:#3365a2;
+	color:#FFF;
+	padding:5px 10px;
+	margin:5px 0px;
+}
+
+.lectures table {
+	border:solid 1px #000;
+	width:80%;
+	margin:30px auto;
+}
+.lectures th, td{
+	border:solid 1px #000;
+	margin:5px;
+	text-align: center;
+}
+.lectures th{
+	background-color:#F2FFCA;
+}
+
+.active-list table{
+	border:solid 1px #000;
+	width:80%;
+	margin:30px auto;
+}
+
+.active-list th, td{
+	border:solid 1px #000;
+	margin:5px;
+	text-align: center;
+}
+.active-list th{
+	background-color:#F2FFCA;
+}
 /*footer*/
 #footer{
+	clear:both;
 	border:solid 1px #000;
 	background-color: green;
 	width:100%;
 	height:80px;
 }
-.user-name{
-	float:right;
-}
 
-.border-header{
-	font-size: 15px;
-		color: white;
-	background-color: #3365a2;
-	width:100%;
-	height:20px;
-}
-.border-header-sub{
-font-size: 15px;
-	background-color: #e1ffff;
-	width:100%;
-	height: 20px;
-}
-.border-header-img{
-	padding-top:10px;
-	background-color: white;
-	width: 100%;
-	height: 45px;
-}
