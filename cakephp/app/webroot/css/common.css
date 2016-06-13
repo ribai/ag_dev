@@ -34,9 +34,9 @@ ul li, ol li {
 /*header*/
 #header{
 	border:solid 1px #000;
-	background-color:yellow;
+	background-color:white;
 	width: 100%;
-	height:80px;
+	height:95px;
 }
 
 /*wrapper*/
@@ -70,4 +70,27 @@ ul li, ol li {
 	background-color: green;
 	width:100%;
 	height:80px;
+}
+.user-name{
+	float:right;
+}
+
+.border-header{
+	font-size: 15px;
+		color: white;
+	background-color: #3365a2;
+	width:100%;
+	height:20px;
+}
+.border-header-sub{
+font-size: 15px;
+	background-color: #e1ffff;
+	width:100%;
+	height: 20px;
+}
+.border-header-img{
+	padding-top:10px;
+	background-color: white;
+	width: 100%;
+	height: 45px;
 }
