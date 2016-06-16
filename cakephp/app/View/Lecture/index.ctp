@@ -10,14 +10,3 @@
 <?php endforeach;?>
 </table>
 </div>
-
-
-<?php
-  foreach($user as $key => $value){
-    echo $value["User"]["id"];
-  }
- ?>
-
- <?php foreach($user as $key => $value):?>
-   
- <?php endforeach;?>
