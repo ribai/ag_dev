@@ -1,4 +1,4 @@
-<img class="border-header-img" src="img/logo-agu.gif" alt="logo" />
+<img class="border-header-img" src="/img/logo-agu.gif" alt="logo" />
 <span class="user-name">ようこそusernameさん</span>
 
 
