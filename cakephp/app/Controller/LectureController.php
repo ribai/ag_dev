@@ -22,8 +22,9 @@ class LectureController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Lecture->recursive = 0;
-		$this->set('lectures', $this->Paginator->paginate());
+		$user = $this->User->find('all');
+		$lecture = $this->Lecture->find('all');
+		$this->set(compact('user','lecture'));
 	}
 
 	public function view($id=NULL) {
