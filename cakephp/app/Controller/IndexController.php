@@ -16,9 +16,12 @@ class IndexController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Flash', 'Session');
+	public $uses = array('User','Lecture');
 
 	public function index(){
-		
+		$user = $this->User->find('all');
+		$lecture = $this->Lecture->find('all');
+		$this->set(compact('user','lecture'));
 	}
 
 }
