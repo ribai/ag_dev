@@ -19,7 +19,7 @@
 	<table>
 		<tr><th>講義名</th><th>教室</th><th>時限</th><th>講師</th></tr>
 		<?php foreach ($lecture as $key => $value):?>
-		<tr><td><a href="/lecture/<?php echo $value["Lecture"]["id"];?>" target="_blank"><?php echo $value["Lecture"]["name"];?></a></td>
+		<tr><td><a href="/lecture/<?php echo $value["Lecture"]["id"];?>"><?php echo $value["Lecture"]["name"];?></a></td>
 			  <td><?php echo $value["Lecture"]["room"];?></td>
 				<td><?php echo $value["Lecture"]["time"];?></td>
 				<td><?php echo $value["Lecture"]["teacher"];?></td>
