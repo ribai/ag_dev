@@ -15,6 +15,7 @@ class LectureController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Flash');
+	public $uses = array('Comment');
 
 /**
  * index method
@@ -27,8 +28,10 @@ class LectureController extends AppController {
 		$this->set(compact('user','lecture'));
 	}
 
-	public function view($id=NULL) {
-
+	public function view() {
+		$lecture_id = $this->request->params['id'];
+		$lecture = $this->Lecture->get_lecture_by_id($lecture_id);
+		$this->set(compact('user','lecture'));
 	}
 
 }
