@@ -24,23 +24,28 @@ class Lecture extends AppModel {
 	}
 
 	public function convert_by_room($lecture){
-		$res_les = array();
-		foreach ($lecture as $key => $les) {
-			$target = $this->find('all',array('condition' => array(
-										'room' => $les['Lecture']['room']
-										),
-										'fields' => array('room','name')
-									));
-			foreach ($target as $key2 => $les2) {
-				array_push($res_les[$les2['Lecture']['room']],$les2['Lecture']['name']);
+		$lec = array();
+		foreach ($lecture as $key => $value) {
+			$room = $value['Lecture']['room'];
+			$building_code = $this->get_building_code($room);
+
+			if(array_key_exists($building_code, $lec)){
+				array_push($lec[$building_code], $value['Lecture']);
+			}else{
+				$lec[$building_code][0] = $value['Lecture'];
 			}
 		}
-		return $res_les;
+		return $lec;
  	}
  	public function get_lecture_by_id($lecture_id){
  		return $this->find('first',array('conditions' => array(
 										'id'  => $lecture_id,
 								)));
+ 	}
+
+ 	//教室番号から棟を取得
+ 	public function get_building_code($room){
+ 		return substr($room, 0,1);
  	}
 
 }
