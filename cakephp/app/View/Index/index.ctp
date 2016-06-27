@@ -23,6 +23,7 @@
 			  <td><?php echo $value["Lecture"]["room"];?></td>
 				<td><?php echo $value["Lecture"]["time"];?></td>
 				<td><?php echo $value["Lecture"]["teacher"];?></td>
+			</tr>
 		<?php endforeach ;//{}と一緒の役割?>
 	</table>
 </div>
