@@ -1,6 +1,19 @@
 <div class="lectures">
+ <pre>
+	<?php
+		print_r($now_lecture);
+		print_r($lecture);
+	?>
+</pre>
 
 	<h2>現在開講中の講義</h2>
+	<table>
+	<tr><th>A棟</th><th>B棟</th><th>C棟</th><th>D棟</th></tr>
+	<?php foreach($now_lecture as $key => $value): ?>
+		<tr><td><?php echo $value[0]['name'];?></td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
+	<?php endforeach;?>
+</table>
+	<!--
 	<table>
 		<tr><th>A棟</th><th>B棟</th><th>C棟</th><th>D棟</th></tr>
 		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
@@ -12,6 +25,7 @@
 		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
 		<tr><td>データベース</td><td>情報科学</td><td>インコミ</td><td>数学基礎</td></tr>
 	</table>
+-->
 </div>
 
 <div class="active-list">
