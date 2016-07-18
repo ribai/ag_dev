@@ -19,8 +19,8 @@ class IndexController extends AppController {
 
 
 	public function index(){
-		$now_day = 4;
-		$now_time = 2;
+		$now_day = 2;
+		$now_time = 4;
 
 		$user = $this->User->find('all');
 		$lecture = $this->Lecture->find('all');

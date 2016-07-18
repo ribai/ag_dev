@@ -36,9 +36,14 @@ class LectureController extends AppController {
 		}
 		$lecture_id = $this->request->params['id'];
 		$lecture = $this->Lecture->get_lecture_by_id($lecture_id);
-		$user['User']['id'] = 0;
-		$comment = $this->Comment->get_comment_by_lecture($lecture_id);
-		$this->set(compact('user','lecture','comment'));
+		$lecture['Lecture']['day'] = $this->getDayByNum($lecture['Lecture']['day']);
+		if(!empty($this->Session->read('Auth.User.id'))){
+			$user['User']['id'] = $this->Session->read('Auth.User.id');
+		}else{
+			$user['User']['id'] = '';
+		}
+		$comments = $this->Comment->get_comment_by_lecture($lecture_id);
+		$this->set(compact('user','lecture','comments'));
 	}
 
 }

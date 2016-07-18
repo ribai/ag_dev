@@ -13,13 +13,12 @@ class Comment extends AppModel {
  * @var string
  */
 	public $displayField = 'name';
-	//public $hasOne = array('User' => array(
-	//						'className' => 'User',
-	//					));
+	public $belongsTo = array('User');
 
 	public function get_comment_by_lecture($lecture_id){
 		$conditions = array('lecture_id' => $lecture_id);
-		return $this->find('all',array('conditions' => $conditions));
+		$order = array('date' => 'DESC');
+		return $this->find('all',array('conditions' => $conditions,'order' => $order));
 	}
 
 }

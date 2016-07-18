@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* Style for Lecture view */
+#lecture-view form{
+	text-align:left;
+	padding: 0px 30px;
+}
+#lecture-view table{
+	border-collapse:collapse;
+}
+#lecture-view td{
+	border:none;
+}
+
+#lecture-view textarea{
+	width:80%;
+	height:40px;
+	margin-top:10px;
+	border-color: #888;
+}
+#lecture-view input[type="submit"]{
+	background-color: #888;
+	font-size: 15px;
+	width:80px;
+	height:45px;
+	margin-top:10px;
+	vertical-align:top;
+	padding:0px;
+}
+#lecture-view .btn{
+	font-size: 15px;
+	width:45px;
+	height:45px;
+	margin-top:10px;
+	vertical-align:top;
+	color: #FFF;
+}
+#lecture-view .btn.good{
+	background-color: #00F;
+	opacity: 0.5;
+}
+#lecture-view .btn.bad{
+	background-color: #F00;
+	opacity: 0.5;
+}
+.comment-area .user-box{
+	width:100px;
+	word-wrap: break-word;
+}
+.comment-area .user-name{
+	font-size:12px;
+	margin-bottom: 15px;
+}
+.comment-area .comment-box{
+	text-align: left;
+}
+.comment-area .user-img{
+	height:50px;
+	width:50px;
+}
+.comment-area .comment{
+	position: relative;
+	background-color: #CCC;
+	text-align: center;
+	padding:10px 0px;
+	border-radius: 5px;		/* CSS3草案 */
+	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;
+}
+/*Normal Evaluation*/
+.comment-area .comment0{
+	background-color: #CCC;
+}
+/*Good Evaluation*/
+.comment-area .comment1{
+	background-color: #88F;
+}
+/*Bad Evaluation*/
+.comment-area .comment2{
+	background-color: #F44;
+}
+.comment span{
+	padding:0px 10px;
+}
+.comment-area .triangle {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 10px solid #CCC;
+  border-bottom: 8px solid transparent;
+}
+/*Normal Evaluation*/
+.comment-area .triangle0{
+	border-right: 10px solid #CCC;
+}
+/*Good Evaluation*/
+.comment-area .triangle1{
+	  border-right: 10px solid #88F;
+}
+/*Bad Evaluation*/
+.comment-area .triangle2{
+	  border-right: 10px solid #F44;
+}
+
+/*現在開講中の講義*/
+.lectures{
+	overflow-y: scroll;
+	padding:20px 40px;
+}
+.lectures ul{
+	font-size:0;
+}
+.lectures ul li{
+	font-size: 14px;
+	width: 200px;
+	float:left;
+	margin-right:-40px;
+}
+.lectures table{
+	margin:0px;
+}

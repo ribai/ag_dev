@@ -1,7 +1,7 @@
 <div class="lectures">
 
 <pre>
-<?php print_r($now_lecture);?>
+<?php //print_r($now_lecture);?>
 	</pre>
 	<h2>現在開講中の講義</h2>
 	<table>

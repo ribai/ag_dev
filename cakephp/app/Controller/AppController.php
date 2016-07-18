@@ -32,5 +32,24 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	public $components = array('Flash','Session');
+
 	public $uses = array('User','Lecture');
+
+	public function getDayByNum($day_num){
+		$DAY = array(
+				0 => '日',
+				1 => '月',
+				2 => '火',
+				3 => '水',
+				4 => '木',
+				5 => '金',
+				6 => '土',
+			);
+		if(ctype_digit($day_num) && intval($day_num)){
+			return $DAY[intval($day_num)];
+		}else{
+			return false;
+		}
+	}
 }

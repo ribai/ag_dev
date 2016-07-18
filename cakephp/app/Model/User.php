@@ -1,5 +1,6 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 /**
  * User Model
  *
@@ -11,7 +12,7 @@ class User extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'username';
 
 /**
  * Validation rules
@@ -47,7 +48,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'name' => array(
+		'username' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
 				'message' => 'ユーザネームを入力してください',
@@ -58,4 +59,14 @@ class User extends AppModel {
 			),
 		),
 	);
+
+	public function beforeSave($options = array()) {
+    	if(isset($this->data[$this->alias]['password'])){
+	        $passwordHasher = new BlowfishPasswordHasher();
+	        $this->data[$this->alias]['password'] = $passwordHasher->hash(
+	            $this->data[$this->alias]['password']
+	        );
+	    }
+	    return true;
+ 	}
 }

@@ -27,6 +27,7 @@
  */
 	Router::connect('/', array('controller' => 'index', 'action' => 'index', 'home'));
 	Router::connect('/lecture/:id',array('controller' => 'lecture','action' => 'view'),array('id' => '[0-9]+'));
+	Router::connect('/users/:action',array('controller' => 'user'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
