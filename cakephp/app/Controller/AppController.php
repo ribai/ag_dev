@@ -36,6 +36,11 @@ class AppController extends Controller {
 
 	public $uses = array('User','Lecture');
 
+	public function beforeFilter(){
+		$USER = $this->Session->read('Auth.User');
+		$this->set(compact('USER'));
+	}
+
 	public function getDayByNum($day_num){
 		$DAY = array(
 				0 => '日',

@@ -1,8 +1,6 @@
 <?php echo $this->Html->css('lecture');?>
 <h2>現在開講中の講義</h2>
 <div class="lectures">
-
-	<pre><?php //print_r($lecture);?></pre>
 	<ul>
 		<?php $LIMIT = 7; $i =0;?>
 		<?php foreach ($now_lecture as $key => $lectures): ?>

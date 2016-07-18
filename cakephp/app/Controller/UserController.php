@@ -41,8 +41,8 @@ class UserController extends AppController {
 	}
 
 	public function index(){
-		$now_day = 4;
-		$now_time = 2;
+		$now_day = 2;
+		$now_time = 4;
 
 		$user = $this->User->find('all');
 		$lecture = $this->Lecture->find('all');
@@ -55,10 +55,10 @@ class UserController extends AppController {
 	public function login(){
     	if($this->request->is('post')) {
       		if($this->Auth->login()){
-        		$this->Flash->error('ログイン成功');
+        		$this->Flash->success('ログインしました');
         		return $this->redirect('index');
       		}else{
-        		$this->Flash->error('ログイン失敗');
+        		$this->Flash->error('ユーザ名またはパスワードが違います');
         	}
     	}
   	}

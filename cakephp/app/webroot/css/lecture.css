@@ -3,7 +3,7 @@
 /* Style for Lecture view */
 #lecture-view form{
 	text-align:left;
-	padding: 0px 30px;
+	padding-left:60px;
 }
 #lecture-view table{
 	border-collapse:collapse;
@@ -13,24 +13,25 @@
 }
 
 #lecture-view textarea{
-	width:80%;
-	height:40px;
+	width:75%;
+	height:60px;
 	margin-top:10px;
 	border-color: #888;
+	font-size: 130%;
 }
 #lecture-view input[type="submit"]{
 	background-color: #888;
 	font-size: 15px;
-	width:80px;
-	height:45px;
+	width:100px;
+	height:65px;
 	margin-top:10px;
 	vertical-align:top;
 	padding:0px;
 }
 #lecture-view .btn{
 	font-size: 15px;
-	width:45px;
-	height:45px;
+	width:65px;
+	height:65px;
 	margin-top:10px;
 	vertical-align:top;
 	color: #FFF;

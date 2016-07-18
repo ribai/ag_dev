@@ -32,6 +32,9 @@
 
 	<h2></h2>
 	<div class="comment-area">
+		<?php if(empty($comments)):?>
+			<p>現在この講義に対するコメントはありません</p>
+		<?php endif;?>
 		<table>
 			<?php foreach ($comments as $key => $comment):?>
 				<?php if(empty($comment['Comment']['text'])):continue;endif;?>
